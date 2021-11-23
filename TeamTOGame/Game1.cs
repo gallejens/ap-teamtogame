@@ -26,7 +26,7 @@ namespace TeamTOGame
         {
             // TODO: Add your initialization logic here
             base.Initialize();
-            character = new Character(slimeTexture, new KeyboardReader());
+            character = new Character(slimeTexture);
         }
 
         protected override void LoadContent()
@@ -50,7 +50,7 @@ namespace TeamTOGame
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Black);
             _spriteBatch.Begin();
             character.Draw(_spriteBatch);
             _spriteBatch.End();

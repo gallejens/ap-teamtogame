@@ -16,30 +16,34 @@ namespace TeamTOGame
         private Texture2D texture;
         private Animation animation;
         public Vector2 Position { get; set; }
-        public Vector2 Speed { get; set; }
-        public IInputReader InputReader { get; set; }
+        public Vector2 Velocity { get; set; }
+        public Vector2 Acceleration { get; set; }
+        public Vector2 WalkSpeed { get; set; }
+        public KeyboardReader KeyboardInput { get; }
+        public MouseReader MouseInput { get; }
 
         private MovementManager movementManager = new MovementManager(); 
 
-        public Character(Texture2D texture, IInputReader inputReader)
+        public Character(Texture2D texture)
         {
             this.texture = texture;
-            InputReader = inputReader;
+            KeyboardInput = new KeyboardReader();
+            MouseInput = new MouseReader();
             animation = new Animation();
             animation.AddFrame(new AnimationFrame(new Rectangle(0, 0, 32, 32)));
             animation.AddFrame(new AnimationFrame(new Rectangle(32, 0, 32, 32)));
             animation.AddFrame(new AnimationFrame(new Rectangle(64, 0, 32, 32)));
             animation.AddFrame(new AnimationFrame(new Rectangle(96, 0, 32, 32)));
 
-            Position = new Vector2(0, 0);
-            Debug.WriteLine(Position);
-            Speed = new Vector2(1, 1);
+            Position = new Vector2(100, 100);
+            Velocity = new Vector2(0, 0);
+            Acceleration = new Vector2(0, 0);
+            WalkSpeed = new Vector2(1, 1);
         }
 
         public void Update(GameTime gameTime)
         {
-            
-            Move();
+            Move(gameTime);
             animation.Update(gameTime);
         }
 
@@ -48,9 +52,9 @@ namespace TeamTOGame
             spriteBatch.Draw(texture, Position, animation.CurrentFrame.SourceRectangle, Color.White);
         }
 
-        private void Move()
+        private void Move(GameTime gameTime)
         {
-            movementManager.Move(this);
+            movementManager.Move(this, gameTime);
         }
     }
 }

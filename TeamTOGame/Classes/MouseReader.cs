@@ -8,15 +8,37 @@ using TeamTOGame.Interfaces;
 
 namespace TeamTOGame.Classes
 {
-    class MouseReader : IInputReader
+    class MouseReader 
     {
-        public bool IsDestinationInput => true;
+        private Vector2 mousePositionBeforePress = Vector2.Zero;
+        private bool mousePressed = false;
 
         public Vector2 ReadInput()
         {
-            MouseState state = Mouse.GetState();
-            Vector2 mousePosition = new Vector2(state.X, state.Y);
-            return mousePosition;
+            MouseState mouseState = Mouse.GetState();
+            Vector2 direction = Vector2.Zero;
+
+            if (mouseState.LeftButton == ButtonState.Pressed)
+            {
+                if (!mousePressed)
+                {
+                    mousePressed = true;
+                    mousePositionBeforePress = new Vector2(mouseState.X, mouseState.Y);
+                }
+            }
+            else if (mouseState.LeftButton == ButtonState.Released && mousePressed)
+            {
+                mousePressed = false;
+
+                // only jump up
+                if (mouseState.Y > mousePositionBeforePress.Y)
+                {
+                    float force = Vector2.Distance(new Vector2(mouseState.X, mouseState.Y), mousePositionBeforePress);
+                    direction = Vector2.Normalize(-Vector2.Subtract(new Vector2(mouseState.X, mouseState.Y), mousePositionBeforePress)) * force;
+                }
+            }
+
+            return direction;
         }
     }
 }
