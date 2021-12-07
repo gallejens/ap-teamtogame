@@ -12,7 +12,12 @@ namespace TeamTOGame
         private SpriteBatch _spriteBatch;
 
         private Character character;
+        private Background background;
+
+
         private Texture2D slimeTexture;
+        private Texture2D backgroundTile;
+        
 
 
         public Game1()
@@ -27,6 +32,8 @@ namespace TeamTOGame
             // TODO: Add your initialization logic here
             base.Initialize();
             character = new Character(slimeTexture);
+            background = new Background(backgroundTile);
+            background.Initialize();
         }
 
         protected override void LoadContent()
@@ -35,7 +42,9 @@ namespace TeamTOGame
 
             // TODO: use this.Content to load your game content here
 
+            backgroundTile = Content.Load<Texture2D>("background");
             slimeTexture = Content.Load<Texture2D>("slimespritesheet");
+
         }
 
         protected override void Update(GameTime gameTime)
@@ -52,7 +61,9 @@ namespace TeamTOGame
         {
             GraphicsDevice.Clear(Color.Black);
             _spriteBatch.Begin();
+            background.Draw(_spriteBatch);
             character.Draw(_spriteBatch);
+
             _spriteBatch.End();
 
 
