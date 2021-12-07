@@ -23,9 +23,9 @@ namespace TeamTOGame.Classes
 
             Vector2 futurePosition = movable.Position + movable.Velocity;
             if (
-                (futurePosition.X < (800 - 180)
+                (futurePosition.X < (800 - 20)
                  && futurePosition.X > -1) &&
-                (futurePosition.Y < 480 - 247
+                (futurePosition.Y < 480 - 35
                  && futurePosition.Y > -1)
             )
             {
@@ -53,10 +53,10 @@ namespace TeamTOGame.Classes
 
                 Vector2 futurePosition = movable.Position + direction;
                 if (
-                    (futurePosition.X < (800 - 180)
-                     && futurePosition.X > -1) &&
-                    (futurePosition.Y < 480 - 247
-                     && futurePosition.Y > -1)
+                (futurePosition.X < (800 - 20)
+                 && futurePosition.X > -1) &&
+                (futurePosition.Y < 480 - 35
+                 && futurePosition.Y > -1)
                 )
                 {
                     movable.Position += direction;
