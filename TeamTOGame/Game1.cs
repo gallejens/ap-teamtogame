@@ -8,6 +8,9 @@ namespace TeamTOGame
 {
     public class Game1 : Game
     {
+        private SpriteFont font;
+        private int score = 0;
+
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
@@ -46,7 +49,7 @@ namespace TeamTOGame
 
             backgroundTile = Content.Load<Texture2D>("background");
             slimeTexture = Content.Load<Texture2D>("slimespritesheet");
-
+            font = Content.Load<SpriteFont>("Score");
         }
 
         protected override void Update(GameTime gameTime)
@@ -57,6 +60,7 @@ namespace TeamTOGame
             // TODO: Add your update logic here
             character.Update(gameTime);
             base.Update(gameTime);
+            score++;
         }
 
         protected override void Draw(GameTime gameTime)
@@ -65,6 +69,7 @@ namespace TeamTOGame
             _spriteBatch.Begin();
             background.Draw(_spriteBatch);
             character.Draw(_spriteBatch);
+            _spriteBatch.DrawString(font, "Score: " + score, new Vector2(50, 50), Color.White);
 
             _spriteBatch.End();
 

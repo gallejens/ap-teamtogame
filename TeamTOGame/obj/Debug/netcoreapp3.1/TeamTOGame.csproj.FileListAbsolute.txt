@@ -77,3 +77,4 @@ C:\Users\selle\source\repos\TeamTOGame\TeamTOGame\obj\Debug\netcoreapp3.1\TeamTO
 C:\Users\selle\source\repos\TeamTOGame\TeamTOGame\obj\Debug\netcoreapp3.1\TeamTOGame.genruntimeconfig.cache
 C:\Users\selle\source\repos\TeamTOGame\TeamTOGame\bin\Debug\netcoreapp3.1\Content\Background Purple Dungeon.xnb
 C:\Users\selle\source\repos\TeamTOGame\TeamTOGame\bin\Debug\netcoreapp3.1\Content\background.xnb
+C:\Users\selle\source\repos\TeamTOGame\TeamTOGame\bin\Debug\netcoreapp3.1\Content\Score.xnb
