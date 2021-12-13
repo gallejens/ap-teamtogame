@@ -23,6 +23,8 @@ namespace TeamTOGame
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
+            // Turn this on to set game to fullscreen.
+            // _graphics.IsFullScreen = true;
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
         }
