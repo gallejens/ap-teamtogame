@@ -4,9 +4,11 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/galle/OneDrive - AP Hogeschool Antwerpen/AP Jaar 2/AP Sem 1/Game Development/Project/TeamTOGame/TeamTOGame/Content/Slime Sprite Sheet.png</File>
+    <File>C:/Users/galle/Documents/School/Game Development/Project/TeamTOGame/TeamTOGame/Content/grass.png</File>
+    <File>C:/Users/galle/Documents/School/Game Development/Project/TeamTOGame/TeamTOGame/Content/Slime Sprite Sheet.png</File>
   </SourceFiles>
   <DestFiles>
+    <File>grasssprite.png</File>
     <File>slimespritesheet.png</File>
   </DestFiles>
 </SourceFileCollection>

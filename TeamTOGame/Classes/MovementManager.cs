@@ -14,7 +14,7 @@ namespace TeamTOGame.Classes
         private float gravity = 0.004f;
         private float mouseForceMultiplier = 0.04f;
 
-        public void Move(IMovable movable, GameTime gameTime)
+        public void Move(IMovable movable, GameTime gameTime, List<ICollidable> collidables)
         {
             ApplyGravity(movable, gameTime);
             CheckInput(movable);
@@ -22,6 +22,9 @@ namespace TeamTOGame.Classes
             movable.Velocity += movable.Acceleration;
 
             Vector2 futurePosition = movable.Position + movable.Velocity;
+            Rectangle futureCollisionBox = new Rectangle((int)futurePosition.X + movable.CollisionBox.X,
+                (int)futurePosition.Y + movable.CollisionBox.Y, movable.CollisionBox.Width, movable.CollisionBox.Height);
+
             if (
                 (futurePosition.X < (800 - 180)
                  && futurePosition.X > -1) &&
@@ -29,7 +32,24 @@ namespace TeamTOGame.Classes
                  && futurePosition.Y > -1)
             )
             {
-                movable.Position += movable.Velocity;
+                bool hasCollided = false;
+                foreach (ICollidable collidable in collidables)
+                {
+                    if (collidable.CheckCollision(futureCollisionBox))
+                    {
+                        hasCollided = true;
+                        break;
+                    }
+                }
+
+                if (!hasCollided)
+                {
+                    movable.Position += movable.Velocity;
+                }
+                else
+                {
+                    movable.Velocity = Vector2.Zero;
+                }
             }
             else
             {
@@ -42,16 +62,16 @@ namespace TeamTOGame.Classes
             Vector2 force = movable.MouseInput.ReadInput();
 
             // if mouse wants to launch and not already moving
-            if (force != Vector2.Zero) //&& movable.Velocity == Vector2.Zero
+            if (force != Vector2.Zero && movable.Velocity == Vector2.Zero) //&& movable.Velocity == Vector2.Zero
             {
                 movable.Velocity = force * mouseForceMultiplier;
             }
             else
             { // no mouse movement so we check keyboard
-                Vector2 keyBoardDirection = movable.KeyboardInput.ReadInput();
-                Vector2 direction = keyBoardDirection * movable.WalkSpeed;
+                int keyBoardDirection = movable.KeyboardInput.ReadInput();
+                float direction = (float)keyBoardDirection * movable.WalkSpeed;
 
-                Vector2 futurePosition = movable.Position + direction;
+                Vector2 futurePosition = movable.Position + new Vector2(direction, 0);
                 if (
                     (futurePosition.X < (800 - 180)
                      && futurePosition.X > -1) &&
@@ -59,7 +79,7 @@ namespace TeamTOGame.Classes
                      && futurePosition.Y > -1)
                 )
                 {
-                    movable.Position += direction;
+                    movable.Position += new Vector2(direction, 0);
                 }
             }
         }

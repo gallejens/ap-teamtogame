@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\galle\\OneDrive - AP Hogeschool Antwerpen\\AP Jaar 2\\AP Sem 1\\Game Development\\Project\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj": {}
+    "C:\\Users\\galle\\Documents\\School\\Game Development\\Project\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\galle\\OneDrive - AP Hogeschool Antwerpen\\AP Jaar 2\\AP Sem 1\\Game Development\\Project\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj": {
+    "C:\\Users\\galle\\Documents\\School\\Game Development\\Project\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\galle\\OneDrive - AP Hogeschool Antwerpen\\AP Jaar 2\\AP Sem 1\\Game Development\\Project\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj",
+        "projectUniqueName": "C:\\Users\\galle\\Documents\\School\\Game Development\\Project\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj",
         "projectName": "TeamTOGame",
-        "projectPath": "C:\\Users\\galle\\OneDrive - AP Hogeschool Antwerpen\\AP Jaar 2\\AP Sem 1\\Game Development\\Project\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj",
+        "projectPath": "C:\\Users\\galle\\Documents\\School\\Game Development\\Project\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj",
         "packagesPath": "C:\\Users\\galle\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\galle\\OneDrive - AP Hogeschool Antwerpen\\AP Jaar 2\\AP Sem 1\\Game Development\\Project\\TeamTOGame\\TeamTOGame\\obj\\",
+        "outputPath": "C:\\Users\\galle\\Documents\\School\\Game Development\\Project\\TeamTOGame\\TeamTOGame\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -51,6 +51,10 @@
             "MonoGame.Framework.WindowsDX": {
               "target": "Package",
               "version": "[3.8.0.1641, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [

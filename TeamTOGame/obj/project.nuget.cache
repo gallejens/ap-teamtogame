@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jRDUATyp+nkd5VCA/ylNwyNkHRUQ5AjekbuTYjH3BRVGELKfQOtcZXQ+bThZ9cKJzWVBeS/eFyk3OHVD22nK0g==",
+  "dgSpecHash": "euvUdvjwe6x5yQ7SxRecfSNqpLm8C0WHvPNcywM7SSgNddmrLZvYzkkGDFKmPlXWwLL2BtUsd9oNUCMszmkcpA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\galle\\OneDrive - AP Hogeschool Antwerpen\\AP Jaar 2\\AP Sem 1\\Game Development\\Project\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj",
+  "projectFilePath": "C:\\Users\\galle\\Documents\\School\\Game Development\\Project\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\galle\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",
     "C:\\Users\\galle\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\1.1.0\\microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",
@@ -25,6 +25,7 @@
     "C:\\Users\\galle\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
     "C:\\Users\\galle\\.nuget\\packages\\monogame.framework.windowsdx\\3.8.0.1641\\monogame.framework.windowsdx.3.8.0.1641.nupkg.sha512",
     "C:\\Users\\galle\\.nuget\\packages\\netstandard.library\\1.6.0\\netstandard.library.1.6.0.nupkg.sha512",
+    "C:\\Users\\galle\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\galle\\.nuget\\packages\\runtime.native.system\\4.0.0\\runtime.native.system.4.0.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\runtime.native.system.io.compression\\4.1.0\\runtime.native.system.io.compression.4.1.0.nupkg.sha512",
     "C:\\Users\\galle\\.nuget\\packages\\runtime.native.system.net.http\\4.0.1\\runtime.native.system.net.http.4.0.1.nupkg.sha512",

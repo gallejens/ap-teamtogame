@@ -18,7 +18,8 @@ namespace TeamTOGame
         public Vector2 Position { get; set; }
         public Vector2 Velocity { get; set; }
         public Vector2 Acceleration { get; set; }
-        public Vector2 WalkSpeed { get; set; }
+        public float WalkSpeed { get; set; }
+        public Rectangle CollisionBox { get; set; }
         public KeyboardReader KeyboardInput { get; }
         public MouseReader MouseInput { get; }
 
@@ -35,15 +36,16 @@ namespace TeamTOGame
             animation.AddFrame(new AnimationFrame(new Rectangle(64, 0, 32, 32)));
             animation.AddFrame(new AnimationFrame(new Rectangle(96, 0, 32, 32)));
 
-            Position = new Vector2(100, 100);
+            Position = new Vector2(300, 100);
             Velocity = new Vector2(0, 0);
             Acceleration = new Vector2(0, 0);
-            WalkSpeed = new Vector2(1, 1);
+            WalkSpeed = 1f;
+            CollisionBox = new Rectangle(10, 24, 12, 8);
         }
 
-        public void Update(GameTime gameTime)
+        public void Update(GameTime gameTime, List<ICollidable> collidables)
         {
-            Move(gameTime);
+            Move(gameTime, collidables);
             animation.Update(gameTime);
         }
 
@@ -52,9 +54,9 @@ namespace TeamTOGame
             spriteBatch.Draw(texture, Position, animation.CurrentFrame.SourceRectangle, Color.White);
         }
 
-        private void Move(GameTime gameTime)
+        private void Move(GameTime gameTime, List<ICollidable> collidables)
         {
-            movementManager.Move(this, gameTime);
+            movementManager.Move(this, gameTime, collidables);
         }
     }
 }

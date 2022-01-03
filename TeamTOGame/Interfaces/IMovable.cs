@@ -11,7 +11,8 @@ namespace TeamTOGame.Interfaces
         public Vector2 Position { get; set; }
         public Vector2 Velocity { get; set; }
         public Vector2 Acceleration { get; set; }
-        public Vector2 WalkSpeed { get; set; }
+        public float WalkSpeed { get; set; }
+        public Rectangle CollisionBox { get; set; }
         public KeyboardReader KeyboardInput { get; }
         public MouseReader MouseInput { get; }
     }
