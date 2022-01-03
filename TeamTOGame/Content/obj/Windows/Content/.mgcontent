@@ -4,11 +4,19 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+<<<<<<< HEAD
     <File>C:/Users/galle/Documents/School/Game Development/Project/TeamTOGame/TeamTOGame/Content/grass.png</File>
     <File>C:/Users/galle/Documents/School/Game Development/Project/TeamTOGame/TeamTOGame/Content/Slime Sprite Sheet.png</File>
   </SourceFiles>
   <DestFiles>
     <File>grasssprite.png</File>
+=======
+    <File>C:/Users/selle/source/repos/TeamTOGame/TeamTOGame/Content/Background Purple Dungeon.png</File>
+    <File>C:/Users/selle/source/repos/TeamTOGame/TeamTOGame/Content/Slime Sprite Sheet.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File>background.png</File>
+>>>>>>> master
     <File>slimespritesheet.png</File>
   </DestFiles>
 </SourceFileCollection>

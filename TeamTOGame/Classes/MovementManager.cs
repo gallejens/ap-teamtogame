@@ -26,9 +26,9 @@ namespace TeamTOGame.Classes
                 (int)futurePosition.Y + movable.CollisionBox.Y, movable.CollisionBox.Width, movable.CollisionBox.Height);
 
             if (
-                (futurePosition.X < (800 - 180)
+                (futurePosition.X < (800 - 20)
                  && futurePosition.X > -1) &&
-                (futurePosition.Y < 480 - 247
+                (futurePosition.Y < 480 - 35
                  && futurePosition.Y > -1)
             )
             {
@@ -73,10 +73,10 @@ namespace TeamTOGame.Classes
 
                 Vector2 futurePosition = movable.Position + new Vector2(direction, 0);
                 if (
-                    (futurePosition.X < (800 - 180)
-                     && futurePosition.X > -1) &&
-                    (futurePosition.Y < 480 - 247
-                     && futurePosition.Y > -1)
+                (futurePosition.X < (800 - 20)
+                 && futurePosition.X > -1) &&
+                (futurePosition.Y < 480 - 35
+                 && futurePosition.Y > -1)
                 )
                 {
                     movable.Position += new Vector2(direction, 0);

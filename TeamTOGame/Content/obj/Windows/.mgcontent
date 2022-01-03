@@ -9,6 +9,7 @@
   </SourceFiles>
   <DestFiles>
     <File>grasssprite.png</File>
+    <File>background.png</File>
     <File>slimespritesheet.png</File>
   </DestFiles>
 </SourceFileCollection>

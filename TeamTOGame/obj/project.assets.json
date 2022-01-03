@@ -7410,23 +7410,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\galle\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\selle\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\galle\\Documents\\School\\Game Development\\Project\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj",
       "projectName": "TeamTOGame",
       "projectPath": "C:\\Users\\galle\\Documents\\School\\Game Development\\Project\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj",
       "packagesPath": "C:\\Users\\galle\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\galle\\Documents\\School\\Game Development\\Project\\TeamTOGame\\TeamTOGame\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\selle\\source\\repos\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj",
+      "projectName": "TeamTOGame",
+      "projectPath": "C:\\Users\\selle\\source\\repos\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj",
+      "packagesPath": "C:\\Users\\selle\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\selle\\source\\repos\\TeamTOGame\\TeamTOGame\\obj\\",
+>>>>>>> master
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\galle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\selle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -7484,7 +7495,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

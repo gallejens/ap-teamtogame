@@ -13,13 +13,21 @@ namespace TeamTOGame
 {
     public class Game1 : Game
     {
+        private SpriteFont font;
+        private int score = 0;
+
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
         private LevelLoader levelLoader;
 
         private Character character;
+        private Background background;
+
+
         private Texture2D slimeTexture;
         private Texture2D platformTexture;
+        private Texture2D backgroundTile;
+        
 
         private Dictionary<string, Texture2D> textureList = new Dictionary<string, Texture2D>();
 
@@ -28,6 +36,8 @@ namespace TeamTOGame
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
+            // Turn this on to set game to fullscreen.
+            // _graphics.IsFullScreen = true;
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
         }
@@ -39,7 +49,6 @@ namespace TeamTOGame
 
             currentLevel = levelLoader.Load(0, textureList);
             character = new Character(slimeTexture);
-            currentLevel.GameObjects.Add(character);
         }
 
         protected override void LoadContent()
@@ -48,9 +57,8 @@ namespace TeamTOGame
 
             // TODO: use this.Content to load your game content here
 
+            backgroundTile = Content.Load<Texture2D>("background");
             slimeTexture = Content.Load<Texture2D>("slimespritesheet");
-            platformTexture = Content.Load<Texture2D>("grasssprite");
-            textureList.Add("grasssprite", platformTexture);
         }
 
         protected override void Update(GameTime gameTime)
@@ -63,18 +71,14 @@ namespace TeamTOGame
             }
 
             base.Update(gameTime);
+            score++;
         }
 
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.Black);
             _spriteBatch.Begin();
-
-            foreach (IGameObject gameObject in currentLevel.GameObjects)
-            {
-                gameObject.Draw(_spriteBatch);
-            }
-
+            character.Draw(_spriteBatch);
             _spriteBatch.End();
 
 
