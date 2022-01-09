@@ -1,11 +1,234 @@
 [
-  [
-    {
-      "left": 100,
-      "top": 100,
-      "width": 70,
-      "height": 70,
-      "texturename": "grasssprite"
-    }
-  ]
+  {
+    "start": {
+      "X": 354,
+      "Y": 1522
+    },
+    "platforms": [
+      {
+        "position": {
+          "X": 219,
+          "Y": 1739
+        },
+        "texturename": "ground_grass"
+      },
+      {
+        "position": {
+          "X": 673,
+          "Y": 650
+        },
+        "texturename": "ground_grass"
+      },
+      {
+        "position": {
+          "X": 1229,
+          "Y": 1130
+        },
+        "texturename": "ground_grass"
+      },
+      {
+        "position": {
+          "X": 1613,
+          "Y": 1130
+        },
+        "texturename": "ground_grass"
+      },
+      {
+        "position": {
+          "X": 2677,
+          "Y": 1004
+        },
+        "texturename": "ground_grass"
+      },
+      {
+        "position": {
+          "X": 2248,
+          "Y": 305
+        },
+        "texturename": "ground_grass_small"
+      },
+      {
+        "position": {
+          "X": 3374,
+          "Y": 1783
+        },
+        "texturename": "ground_grass_small"
+      }
+    ],
+    "enemies": [
+      {
+        "type": "flying",
+        "start": {
+          "X": 3304,
+          "Y": 458
+        },
+        "end": {
+          "X": 3304,
+          "Y": 1272
+        },
+        "texturename": "enemy_fly"
+      },
+      {
+        "type": "walking",
+        "start": {
+          "X": 1270,
+          "Y": 971
+        },
+        "end": {
+          "X": 1842,
+          "Y": 971
+        },
+        "texturename": "enemy_walk"
+      },
+      {
+        "type": "stationary",
+        "start": {
+          "X": 300,
+          "Y": 633
+        },
+        "end": {
+          "X": 300,
+          "Y": 633
+        },
+        "texturename": "enemy_cloud"
+      }
+    ],
+    "carrots": [
+      {
+        "X": 787,
+        "Y": 446
+      },
+      {
+        "X": 2291,
+        "Y": 87
+      },
+      {
+        "X": 3413,
+        "Y": 1595
+      }
+    ]
+  },
+  {
+    "start": {
+      "X": 300,
+      "Y": 1450
+    },
+    "platforms": [
+      {
+        "position": {
+          "X": 176,
+          "Y": 1698
+        },
+        "texturename": "ground_grass"
+      },
+      {
+        "position": {
+          "X": 280,
+          "Y": 706
+        },
+        "texturename": "ground_grass_small"
+      },
+      {
+        "position": {
+          "X": 1304,
+          "Y": 236
+        },
+        "texturename": "ground_grass"
+      },
+      {
+        "position": {
+          "X": 1049,
+          "Y": 1214
+        },
+        "texturename": "ground_grass"
+      },
+      {
+        "position": {
+          "X": 1432,
+          "Y": 1214
+        },
+        "texturename": "ground_grass"
+      },
+      {
+        "position": {
+          "X": 1815,
+          "Y": 1214
+        },
+        "texturename": "ground_grass_small"
+      },
+      {
+        "position": {
+          "X": 1918,
+          "Y": 1866
+        },
+        "texturename": "ground_grass"
+      },
+      {
+        "position": {
+          "X": 3216,
+          "Y": 454
+        },
+        "texturename": "ground_grass_small"
+      },
+      {
+        "position": {
+          "X": 2962,
+          "Y": 1426
+        },
+        "texturename": "ground_grass_small"
+      }
+    ],
+    "enemies": [
+      {
+        "type": "flying",
+        "start": {
+          "X": 2364,
+          "Y": 1500
+        },
+        "end": {
+          "X": 2364,
+          "Y": 500
+        },
+        "texturename": "enemy_fly"
+      },
+      {
+        "type": "walking",
+        "start": {
+          "X": 1100,
+          "Y": 1055
+        },
+        "end": {
+          "X": 1800,
+          "Y": 1055
+        },
+        "texturename": "enemy_walk"
+      },
+      {
+        "type":  "stationary",
+        "start": {
+          "X": 768,
+          "Y": 394
+        },
+        "end": {
+          "X": 768,
+          "Y": 394
+        },
+        "texturename": "enemy_cloud"
+      }
+    ],
+    "carrots": [
+      {
+        "X": 328,
+        "Y": 568
+      },
+      {
+        "X": 3270,
+        "Y": 322
+      },
+      {
+        "X": 2036,
+        "Y": 1600
+      }
+    ]
+  },
 ]

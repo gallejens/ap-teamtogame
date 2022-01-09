@@ -1,38 +1,24 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\galle\\Documents\\School\\Game Development\\Project\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj": {}
+    "C:\\Users\\galle\\Documents\\School\\AP2\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\galle\\Documents\\School\\Game Development\\Project\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj": {
+    "C:\\Users\\galle\\Documents\\School\\AP2\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\galle\\Documents\\School\\Game Development\\Project\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj",
+        "projectUniqueName": "C:\\Users\\galle\\Documents\\School\\AP2\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj",
         "projectName": "TeamTOGame",
-        "projectPath": "C:\\Users\\galle\\Documents\\School\\Game Development\\Project\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj",
+        "projectPath": "C:\\Users\\galle\\Documents\\School\\AP2\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj",
         "packagesPath": "C:\\Users\\galle\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\galle\\Documents\\School\\Game Development\\Project\\TeamTOGame\\TeamTOGame\\obj\\",
-=======
-    "C:\\Users\\selle\\source\\repos\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\selle\\source\\repos\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\selle\\source\\repos\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj",
-        "projectName": "TeamTOGame",
-        "projectPath": "C:\\Users\\selle\\source\\repos\\TeamTOGame\\TeamTOGame\\TeamTOGame.csproj",
-        "packagesPath": "C:\\Users\\selle\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\selle\\source\\repos\\TeamTOGame\\TeamTOGame\\obj\\",
->>>>>>> master
+        "outputPath": "C:\\Users\\galle\\Documents\\School\\AP2\\TeamTOGame\\TeamTOGame\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\selle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\galle\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -91,7 +77,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -4,12 +4,43 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/galle/Documents/School/Game Development/Project/TeamTOGame/TeamTOGame/Content/grass.png</File>
-    <File>C:/Users/galle/Documents/School/Game Development/Project/TeamTOGame/TeamTOGame/Content/Slime Sprite Sheet.png</File>
+    <File>C:/Users/galle/Documents/School/AP2/TeamTOGame/TeamTOGame/Content/Audio/theme.wav</File>
+    <File>C:/Users/galle/Documents/School/AP2/TeamTOGame/TeamTOGame/Content/Fonts/ButtonFont.spritefont</File>
+    <File>C:/Users/galle/Documents/School/AP2/TeamTOGame/TeamTOGame/Content/Fonts/HeaderFont.spritefont</File>
+    <File>C:/Users/galle/Documents/School/AP2/TeamTOGame/TeamTOGame/Content/textures/background.png</File>
+    <File>C:/Users/galle/Documents/School/AP2/TeamTOGame/TeamTOGame/Content/textures/bunnyjump.png</File>
+    <File>C:/Users/galle/Documents/School/AP2/TeamTOGame/TeamTOGame/Content/textures/bunnyready.png</File>
+    <File>C:/Users/galle/Documents/School/AP2/TeamTOGame/TeamTOGame/Content/textures/bunnystand.png</File>
+    <File>C:/Users/galle/Documents/School/AP2/TeamTOGame/TeamTOGame/Content/textures/bunnywalkleft.png</File>
+    <File>C:/Users/galle/Documents/School/AP2/TeamTOGame/TeamTOGame/Content/textures/bunnywalkright.png</File>
+    <File>C:/Users/galle/Documents/School/AP2/TeamTOGame/TeamTOGame/Content/textures/carrots.png</File>
+    <File>C:/Users/galle/Documents/School/AP2/TeamTOGame/TeamTOGame/Content/textures/enemy_cloud.png</File>
+    <File>C:/Users/galle/Documents/School/AP2/TeamTOGame/TeamTOGame/Content/textures/enemy_fly.png</File>
+    <File>C:/Users/galle/Documents/School/AP2/TeamTOGame/TeamTOGame/Content/textures/enemy_walk.png</File>
+    <File>C:/Users/galle/Documents/School/AP2/TeamTOGame/TeamTOGame/Content/textures/ground_grass.png</File>
+    <File>C:/Users/galle/Documents/School/AP2/TeamTOGame/TeamTOGame/Content/textures/ground_grass_small.png</File>
+    <File>C:/Users/galle/Documents/School/AP2/TeamTOGame/TeamTOGame/Content/textures/jump_dot.png</File>
+    <File>C:/Users/galle/Documents/School/AP2/TeamTOGame/TeamTOGame/Content/textures/lifes.png</File>
+    <File>C:/Users/galle/Documents/School/AP2/TeamTOGame/TeamTOGame/Content/UI/button.png</File>
   </SourceFiles>
   <DestFiles>
-    <File>grasssprite.png</File>
-    <File>background.png</File>
-    <File>slimespritesheet.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

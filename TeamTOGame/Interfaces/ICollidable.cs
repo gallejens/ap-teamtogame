@@ -10,6 +10,5 @@ namespace TeamTOGame.Interfaces
     interface ICollidable
     {
         bool CheckCollision(Rectangle rec);
-        void Draw(SpriteBatch spriteBatch);
     }
 }
