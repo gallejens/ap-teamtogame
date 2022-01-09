@@ -9,7 +9,7 @@ using TeamTOGame.Interfaces;
 
 namespace TeamTOGame.Classes
 {
-    class KeyboardReader
+    class KeyboardReader : IKeyboardReader
     {
         public int ReadInput()
         {

@@ -18,13 +18,13 @@ namespace TeamTOGame.Classes
 
         private GameTime previousGameTime = new GameTime();
 
-        private KeyboardReader keyboardReader;
-        private MouseReader mouseReader;
+        private IKeyboardReader keyboardReader;
+        private IMouseReader mouseReader;
 
-        public MovementManager()
+        public MovementManager(IKeyboardReader keyboardReader, IMouseReader mouseReader)
         {
-            keyboardReader = new KeyboardReader();
-            mouseReader = new MouseReader();
+            this.keyboardReader = keyboardReader;
+            this.mouseReader = mouseReader;
         }
 
         public void Move(Character character, GameTime gameTime, List<ICollidable> platforms)

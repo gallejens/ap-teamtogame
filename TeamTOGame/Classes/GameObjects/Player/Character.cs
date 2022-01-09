@@ -30,7 +30,7 @@ namespace TeamTOGame
         public List<ICollidable> Carrots { get; set; }
         public CharacterState State { get; set; } = CharacterState.Idle;
 
-        private MovementManager movementManager = new MovementManager();
+        private MovementManager movementManager = new MovementManager(new KeyboardReader(), new MouseReader());
         public HealthBar healthBar { get; set; }
 
         public event EventHandler<CarrotHitEventArgs> OnCarrotHit;

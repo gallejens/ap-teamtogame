@@ -8,10 +8,10 @@ using TeamTOGame.Interfaces;
 
 namespace TeamTOGame.Classes
 {
-    class MouseReader 
+    class MouseReader : IMouseReader
     {
         private Vector2 mousePositionBeforePress = Vector2.Zero;
-        public bool MousePressed { get; private set; } = false;
+        public bool MousePressed { get; set; } = false;
 
         public Vector2 ReadInput()
         {
